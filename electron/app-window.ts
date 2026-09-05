@@ -143,8 +143,9 @@ export function createMainWindow(options: CreateWindowOptions): BrowserWindow {
   })
 
   window.setMenuBarVisibility(false)
-  // Re-assert the compositor shadow after creating a borderless window.
-  window.setHasShadow(true)
+  // DWM 原生阴影跟随窗口矩形（方角），会在圆角壳外露出一圈方形淡角——
+  // 圆角阴影由 window-shadow.ts 的独立阴影窗提供（跟随圆角形状），此处必须关闭原生阴影。
+  window.setHasShadow(false)
   window.once('closed', options.onClosed)
   attachWindowShadow(window)
   window.once('ready-to-show', () => {
