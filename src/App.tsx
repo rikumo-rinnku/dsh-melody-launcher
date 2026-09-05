@@ -116,6 +116,14 @@ function LauncherShell() {
     window.addEventListener('wheel', onWheel, { passive: true })
     return () => window.removeEventListener('wheel', onWheel)
   }, [enterWheelchair, navigation.surface, wheelchairMode])
+  // TEMP(验证用)：F9 翻入轮椅模式
+  useEffect(() => {
+    const onKey = (event: KeyboardEvent) => {
+      if (event.key === 'F9') enterWheelchair()
+    }
+    window.addEventListener('keydown', onKey)
+    return () => window.removeEventListener('keydown', onKey)
+  }, [enterWheelchair])
   const [credentialOpen, setCredentialOpen] = useState(false)
   const [githubAccountOpen, setGitHubAccountOpen] = useState(false)
   const [createPackOpen, setCreatePackOpen] = useState(false)

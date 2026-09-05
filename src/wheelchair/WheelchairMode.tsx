@@ -47,8 +47,9 @@ export function WheelchairMode({ store, flip, onImportPack, onOpenLauncherUpdate
   useEffect(() => {
     const style = document.createElement('style')
     style.id = STYLE_ELEMENT_ID
-    // PR 样式之后追加壳覆盖规则：复刻原版 .surface-stage 的圆角/阴影/裁剪，
-    // 并强制 html/body 透明不滚——轮椅模式的可见边缘与原版窗口完全一致。
+    // PR 样式之后追加壳覆盖规则：逐字复制一级界面 .surface-stage 的圆角实现
+    // （同圆角、同溢出裁剪、同壳底色变量、同款阴影），并强制 html/body 透明不滚——
+    // 轮椅模式的可见边缘与原版窗口完全一致，圆角外同样透出桌面。
     style.textContent = wheelchairCss + `
 html, body { background: transparent !important; overflow: hidden !important; }
 .wheelchair-mode-overlay {
@@ -58,7 +59,7 @@ html, body { background: transparent !important; overflow: hidden !important; }
   overflow: hidden;
   display: flex;
   flex-direction: column;
-  background: #dfe7ec;
+  background: var(--chrome, #dfe7ec);
 }
 .wheelchair-mode-body { flex: 1; min-height: 0; overflow: hidden; display: flex; flex-direction: column; }
 .wheelchair-mode-body > * { flex: 1; min-height: 0; }
