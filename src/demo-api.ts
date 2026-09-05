@@ -1651,6 +1651,5 @@ export const demoApi: LauncherApi = {
   skillMarketAnalyze: async () => ({ repository: 'demo/repo', defaultBranch: 'main', installability: 'ready' as const, summary: '演示', targets: [] }),
   skillMarketInstall: async () => ({ installedSkill: { name: 'demo', description: '', path: '', format: 'bundle', enabled: true, modelInvocable: true, userInvocable: true }, installedSkills: [] }),
   skillMarketInstallByName: async () => ({ installedSkill: { name: 'demo', description: '', path: '', format: 'bundle', enabled: true, modelInvocable: true, userInvocable: true }, installedSkills: [] }),
-  presetsBuiltin: async () => [],
-  pulseWindowShadow: async () => undefined,}
+  presetsBuiltin: async () => [],}
 // （PR #94 轮椅模式演示桩已并入上方字面量。）

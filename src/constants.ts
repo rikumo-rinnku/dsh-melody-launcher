@@ -165,8 +165,7 @@ export const IPC = {
   windowSetMode: 'window:set-mode',
   windowMinimize: 'window:minimize',
   windowToggleMaximize: 'window:toggle-maximize',
-  windowClose: 'window:close',
-  windowFlipPulse: 'window:flip-pulse',} as const
+  windowClose: 'window:close',} as const
 
 /** 主进程主动推送给渲染层的事件通道。 */
 export const IPC_EVENTS = {

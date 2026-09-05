@@ -1151,9 +1151,7 @@ export interface PluginUninstallOptions {
   purgeStore?: boolean
 }
 
-export interface LauncherApi {
-  /** 模式翻转时通知主进程：阴影窗播放「抬升-回落」脉冲。 */
-  pulseWindowShadow(): Promise<void>
+export interface LauncherApi {
   getSettings(): Promise<AppSettings>
   saveSettings(settings: AppSettings): Promise<AppSettings>
   detectDshInstallation(): Promise<DshInstallationStatus>
