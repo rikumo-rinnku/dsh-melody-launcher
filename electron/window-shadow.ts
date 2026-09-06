@@ -12,6 +12,7 @@ const SHADOW_HTML = `<!doctype html>
         inset: ${SHADOW_MARGIN}px;
         border-radius: 14px;
         box-shadow: 0 10px 28px rgba(22, 32, 26, .25), 0 2px 9px rgba(22, 32, 26, .16);
+        background: #171b18;
       }
     </style>
   </head>
