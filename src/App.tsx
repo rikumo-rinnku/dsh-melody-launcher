@@ -834,7 +834,7 @@ function LauncherShell() {
       )}
 
       {wheelchairMode && (
-        <div style={{ position: 'fixed', inset: 0, zIndex: 50, background: '#dfe7ec', overflow: 'hidden', borderRadius: 12 }}>
+        <div style={{ position: 'fixed', inset: 0, zIndex: 50, background: '#276f91', overflow: 'hidden', borderRadius: 12 }}>
           <WheelchairMode
             store={store}
             flip={modeFlip}
