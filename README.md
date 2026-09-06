@@ -27,7 +27,6 @@
 
 <br />
 
-<img src="public/launcher-background.png" alt="dsh-旋律启动器" width="820" />
 
 </div>
 

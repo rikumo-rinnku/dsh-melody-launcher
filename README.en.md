@@ -27,7 +27,6 @@ Download one executable and go: it manages DSH itself, plugins, your API key, an
 
 <br />
 
-<img src="public/launcher-background.png" alt="DSH Melody Launcher" width="820" />
 
 </div>
 
