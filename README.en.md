@@ -1,5 +1,7 @@
 <div align="center">
 
+<img src="public/launcher-icon.png" alt="DSH Melody Launcher" width="128" />
+
 
 # DSH Melody Launcher
 

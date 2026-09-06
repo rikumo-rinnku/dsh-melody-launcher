@@ -1,5 +1,6 @@
 <div align="center">
 
+<img src="public/launcher-icon.png" alt="dsh-旋律启动器" width="128" />
 
 # dsh-旋律启动器
 
